@@ -99,35 +99,43 @@ int main()
     
 
 // }
-//成绩判断
+//
+//成绩判断（成功）
+// {
+//     int score;
+//     printf("write down your grade(1/2/3/4/5)");
+
+//     scanf("%d",&score);
+
+
+//     switch (score)
+//     {
+//     case 5:
+//         printf("Excellent\n");
+//         break;
+//     case 4:
+//         printf("Good\n");
+//         break;
+//     case 3:
+//         printf("Average\n");
+//         break;
+//     case 2:
+//         printf("not very good\n");
+//         break;
+//     case 1:
+//         printf("bad\n");
+//         break;
+//     default:
+//         printf("Illeagle score\n"); 
+//         break;
+//     }
+
+
+// }
+
 {
-    int score;
-    printf("write down your grade(1/2/3/4/5)");
-
-    scanf("%d",&score);
+    int input,output;
 
 
-    switch (score)
-    {
-    case 5:
-        printf("Excellent\n");
-        break;
-    case 4:
-        printf("Good\n");
-        break;
-    case 3:
-        printf("Average\n");
-        break;
-    case 2:
-        printf("not very good\n");
-        break;
-    case 1:
-        printf("bad\n");
-        break;
-    default:
-        printf("Illeagle score\n"); 
-        break;
-    }
-
-
+    printf("Welcome to your");
 }
