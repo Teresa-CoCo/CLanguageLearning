@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
-int main()
+void main()
 {
     // int day1;
     // int Array[7],index;
@@ -67,7 +67,9 @@ int main()
         printf("%d\t\n",Array[index]);
     }
     
-    float avg=(day1+day2+day3+day4+day5+day6+day7)/7;
+    float sum=(day1+day2+day3+day4+day5+day6+day7);
+    float avg=((float)sum/7);
+
 
     printf("平均步数为：%f",avg);
     
