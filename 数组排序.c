@@ -32,18 +32,18 @@ int main()
     {
         Temperate = Array[temp];
         Pos = temp;
-        for (temp2 = temp+1; temp2 < input1+1; temp2++)
+        for (temp2 = temp+1; temp2 < input1+1; temp2++)     //cycle2（判断下一位是否大于原本数值）
         {
-            if (Array[temp2]>Temperate)
+            if (Array[temp2]>Temperate)                //如果大，则重新负值给temperate       
             {
-                Temperate =Array[temp2];
+                Temperate =Array[temp2];            //将临时数值重新分配给第temp+1个数
                 Pos=temp2;
             }
             
         }
         
     
-    Array[Pos]=Array[temp];
+    Array[Pos]=Array[temp];             //if条件运行完成后，将if判断出的结果分配到数组中保存后，继续进行下一个for循环
     Array[temp]=Temperate;
 
 
