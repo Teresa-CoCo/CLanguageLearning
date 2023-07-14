@@ -5,7 +5,7 @@ int main()
 {
     int input1,temp;
     printf("请输入你要录入的数据的个数\n");
-    scanf("%d",input1);
+    scanf("%d",&input1);
 
 
     printf("您将要要输入%d个数据\n",input1);
@@ -18,7 +18,7 @@ int main()
     for (temp=0;temp<input1; temp++)
     {
         printf("请输入第%d个数据\n",&temp);
-        scanf("%d",&Array[temp])
+        scanf("%d",&Array[temp]);
     }
 
 
@@ -26,7 +26,7 @@ int main()
 
     for ( temp = 0; temp < input1; temp++)
     {
-        print("%d",Array[temp]);
+        printf("%d\n",Array[temp]);
     }
     
 
@@ -41,7 +41,7 @@ int main()
 
     
 
-    scanf("%d")
+    
 
     
 }
