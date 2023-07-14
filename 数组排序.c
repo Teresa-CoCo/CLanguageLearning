@@ -20,9 +20,43 @@ int main()
         printf("请输入第%d个数据\n",&temp);
         scanf("%d",&Array[temp]);
     }
+    
+    
 
 
-    printf("您输入了一下数据：\n");                         /*测试输入数据正确性*/
+    //排序算法1:选择法
+    int Temperate,Pos,temp2;
+
+
+    for ( temp = 0; temp < input1; temp++)                   //cycle1          
+    {
+        Temperate = Array[temp];
+        Pos = temp;
+        for (temp2 = temp+1; temp2 < input1+1; temp2++)
+        {
+            if (Array[temp2]>Temperate)
+            {
+                Temperate =Array[temp2];
+                Pos=temp2;
+            }
+            
+        }
+        
+    
+    Array[Pos]=Array[temp];
+    Array[temp]=Temperate;
+
+
+    }
+    
+
+
+
+
+
+
+
+    printf("您输入了一下数据：\n");                         /*测试输入(排序)数据正确性*/
 
     for ( temp = 0; temp < input1; temp++)
     {
