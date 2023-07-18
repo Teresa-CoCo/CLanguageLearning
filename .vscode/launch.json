@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/workspaces/CLanguageLearning",
-      "program": "/workspaces/CLanguageLearning/build/Debug/outDebug",
+      "externalConsole": true,
+      "cwd": "d:/Develop/CLanguageLearning",
+      "program": "d:/Develop/CLanguageLearning/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

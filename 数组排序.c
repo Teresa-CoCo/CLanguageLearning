@@ -1,8 +1,10 @@
 #include<stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
+#include<windows.h>
 
 int main()
 {
+    SetConsoleOutputCP(65001);
     int input1,temp;
     printf("请输入你要录入的数据的个数\n");
     scanf("%d",&input1);
