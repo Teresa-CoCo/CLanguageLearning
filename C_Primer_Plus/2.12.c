@@ -7,7 +7,7 @@ int main()
     int temp;
     
     printf("请输入你的年龄(年，请取整)");
-    scanf("%d",temp);
+    scanf("%d",&temp);
 
     int yearold = temp*365;
     printf("恭喜您，您已经出生了%d天！",yearold);
