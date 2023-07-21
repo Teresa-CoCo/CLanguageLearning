@@ -54,35 +54,58 @@
 #include<stdio.h>
 
 
-int main()
+int main(void)
 {
-    int height,weight,yuhu;
-    long bmi;
+    float height,weight;
+    float nuh,yuhu;
 
-    printf("请输入你的身高:\n");
-    scanf("%d",&height);
+    printf("请输入你的身高（米）:\n");
+    scanf("%f",&height);
 
-    printf("您的身高为%d",height);
+    printf("您的身高为%f米",height);
 
-    printf("请输入体重：\n");
-    scanf("%d",&weight);
+    printf("请输入体重：（kg）\n");
+    scanf("%f",&weight);
 
-    printf("您的体重为%d\n",weight);
+    printf("您的体重为%f kg\n",weight);
 
 
-    yuhu = height*height;
-
-    
-
-    //bmi = weight / yuhu; 
+    yuhu = (float)height*height;
 
     
 
+    nuh = (float)weight / yuhu; 
+
     
 
-    printf("yuhu为%d\n",yuhu);
+    
 
-    printf("bmi为%d\n",weight%yuhu);
+    printf("yuhu为%.1f\n",yuhu);
+
+    printf("bmi为%.1f\n",nuh);
+
+    if(nuh<18.5)
+    {
+        printf("体重过轻\n");
+        return 0;
+    }
+    else if(18.5<=nuh && nuh<24)
+    {
+        printf("健康体重，请继续保持\n");
+        return 0;
+
+    }
+    else if(24<=nuh && nuh<27)
+    {
+        printf("体重过重了\n");
+        return 0;
+    }
+    else if (nuh>=27)
+    {
+        printf("体重超重了\n");
+        return 0;
+    }
+    
 
     return 0;
 
