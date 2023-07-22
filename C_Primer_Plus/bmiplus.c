@@ -6,7 +6,7 @@
 //     int panduan;
 //     float nuh,yuhu;
 
-//     printf("è¯·è¾“å…¥ä½ çš„èº«é«˜:\n");
+//     printf("ÇëÊäÈëÄãµÄÉí¸ß:\n");
 //     scanf("%f",&height);
 
 //     if (height>100)
@@ -16,13 +16,13 @@
     
 
 
-//     printf("æ‚¨çš„èº«é«˜ä¸º%fç±³",standardheight);
+//     printf("ÄúµÄÉí¸ßÎª%fÃ×",standardheight);
 
-//     printf("è¯·è¾“å…¥ä½“é‡ï¼š\n");
+//     printf("ÇëÊäÈëÌåÖØ£º\n");
     
 //     scanf("%f",&weight);
 
-//     printf("è¯·é€‰æ‹©æ‚¨åˆšè¾“å…¥ä½“é‡çš„å•ä½ï¼š1.å…¬æ–¤ï¼Œ2.å¸‚æ–¤");
+//     printf("ÇëÑ¡ÔñÄú¸ÕÊäÈëÌåÖØµÄµ¥Î»£º1.¹«½ï£¬2.ÊĞ½ï");
 //     scanf("%d",&panduan);
 
 
@@ -37,13 +37,13 @@
 //     }
 //     else if (panduan != 1 && panduan !=0)
 //     {
-//         printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯,è¯·é‡æ–°æ‰§è¡Œã€‚");/* code */
+//         printf("ÄúµÄÊäÈëÓĞÎó,ÇëÖØĞÂÖ´ĞĞ¡£");/* code */
 //         return 0;
 //     }
     
     
 
-//     printf("æ‚¨çš„ä½“é‡ä¸º%f kg\n",standardweight);
+//     printf("ÄúµÄÌåÖØÎª%f kg\n",standardweight);
 
 
 //     yuhu = (float)height*height;
@@ -56,29 +56,29 @@
 
     
 
-//     printf("yuhuä¸º%.1f\n",yuhu);
+//     printf("yuhuÎª%.1f\n",yuhu);
 
-//     printf("bmiä¸º%.1f\n",nuh);
+//     printf("bmiÎª%.1f\n",nuh);
 
 //     if(nuh<18.5)
 //     {
-//         printf("ä½“é‡è¿‡è½»\n");
+//         printf("ÌåÖØ¹ıÇá\n");
 //         return 0;
 //     }
 //     else if(18.5<=nuh && nuh<24)
 //     {
-//         printf("å¥åº·ä½“é‡ï¼Œè¯·ç»§ç»­ä¿æŒ\n");
+//         printf("½¡¿µÌåÖØ£¬Çë¼ÌĞø±£³Ö\n");
 //         return 0;
 
 //     }
 //     else if(24<=nuh && nuh<27)
 //     {
-//         printf("ä½“é‡è¿‡é‡äº†\n");
+//         printf("ÌåÖØ¹ıÖØÁË\n");
 //         return 0;
 //     }
 //     else if (nuh>=27)
 //     {
-//         printf("ä½“é‡è¶…é‡äº†\n");
+//         printf("ÌåÖØ³¬ÖØÁË\n");
 //         return 0;
 //     }
     
@@ -100,17 +100,17 @@ int main(void)
     int panduan;
     float nuh, yuhu;
 
-    printf("è¯·è¾“å…¥ä½ çš„èº«é«˜:\n");
+    printf("ÇëÊäÈëÄãµÄÉí¸ß:\n");
     scanf("%f", &height);
 
     standardheight = height / 100;
 
-    printf("æ‚¨çš„èº«é«˜ä¸º%fç±³\n", standardheight);
+    printf("ÄúµÄÉí¸ßÎª%fÃ×\n", standardheight);
 
-    printf("è¯·è¾“å…¥ä½“é‡ï¼š\n");
+    printf("ÇëÊäÈëÌåÖØ£º\n");
     scanf("%f", &weight);
 
-    printf("è¯·é€‰æ‹©æ‚¨åˆšè¾“å…¥ä½“é‡çš„å•ä½ï¼š1.å…¬æ–¤ï¼Œ2.å¸‚æ–¤\n");
+    printf("ÇëÑ¡ÔñÄú¸ÕÊäÈëÌåÖØµÄµ¥Î»£º1.¹«½ï£¬2.ÊĞ½ï\n");
     scanf("%d", &panduan);
 
     if (panduan == 2)
@@ -123,34 +123,34 @@ int main(void)
     }
     else
     {
-        printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯ï¼Œè¯·é‡æ–°æ‰§è¡Œã€‚\n");
+        printf("ÄúµÄÊäÈëÓĞÎó£¬ÇëÖØĞÂÖ´ĞĞ¡£\n");
         return 0;
     }
 
-    printf("æ‚¨çš„ä½“é‡ä¸º%f kg\n", standardweight);
+    printf("ÄúµÄÌåÖØÎª%f kg\n", standardweight);
 
     yuhu = standardheight * standardheight;
 
     nuh = standardweight / yuhu;
 
-    printf("yuhuä¸º%.1f\n", yuhu);
-    printf("bmiä¸º%.1f\n", nuh);
+    printf("yuhuÎª%.1f\n", yuhu);
+    printf("bmiÎª%.1f\n", nuh);
 
     if (nuh < 18.5)
     {
-        printf("ä½“é‡è¿‡è½»\n");
+        printf("ÌåÖØ¹ıÇá\n");
     }
     else if (18.5 <= nuh && nuh < 24)
     {
-        printf("å¥åº·ä½“é‡ï¼Œè¯·ç»§ç»­ä¿æŒ\n");
+        printf("½¡¿µÌåÖØ£¬Çë¼ÌĞø±£³Ö\n");
     }
     else if (24 <= nuh && nuh < 27)
     {
-        printf("ä½“é‡è¿‡é‡äº†\n");
+        printf("ÌåÖØ¹ıÖØÁË\n");
     }
     else if (nuh >= 27)
     {
-        printf("ä½“é‡è¶…é‡äº†\n");
+        printf("ÌåÖØ³¬ÖØÁË\n");
     }
 
     return 0;
