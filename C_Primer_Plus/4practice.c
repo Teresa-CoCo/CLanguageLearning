@@ -104,6 +104,7 @@ int main(void)
     {
         printf("体重超重了\n");
         return 0;
+        
     }
     
 
