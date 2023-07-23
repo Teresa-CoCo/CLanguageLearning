@@ -1,88 +1,161 @@
+// #include<stdio.h>
+
+// int main(void)
+// {
+//     float height,weight,standardheight,standardweight;
+//     int panduan;
+//     float nuh,yuhu;
+
+//     printf("ÇëÊäÈëÄãµÄÉí¸ß:\n");
+//     scanf("%f",&height);
+
+//     if (height>100)
+//     {
+//         standardheight = height / 100;
+//     }
+    
+
+
+//     printf("ÄúµÄÉí¸ßÎª%fÃ×",standardheight);
+
+//     printf("ÇëÊäÈëÌåÖØ£º\n");
+    
+//     scanf("%f",&weight);
+
+//     printf("ÇëÑ¡ÔñÄú¸ÕÊäÈëÌåÖØµÄµ¥Î»£º1.¹«½ï£¬2.ÊĞ½ï");
+//     scanf("%d",&panduan);
+
+
+
+//     if (panduan == 2)
+//     {
+//         standardheight = (float)height / 2;
+//     }
+//     else if (panduan == 1)
+//     {
+//         standardheight = (float)weight;
+//     }
+//     else if (panduan != 1 && panduan !=0)
+//     {
+//         printf("ÄúµÄÊäÈëÓĞÎó,ÇëÖØĞÂÖ´ĞĞ¡£");/* code */
+//         return 0;
+//     }
+    
+    
+
+//     printf("ÄúµÄÌåÖØÎª%f kg\n",standardweight);
+
+
+//     yuhu = (float)height*height;
+
+    
+
+//     nuh = (float)weight / yuhu; 
+
+    
+
+    
+
+//     printf("yuhuÎª%.1f\n",yuhu);
+
+//     printf("bmiÎª%.1f\n",nuh);
+
+//     if(nuh<18.5)
+//     {
+//         printf("ÌåÖØ¹ıÇá\n");
+//         return 0;
+//     }
+//     else if(18.5<=nuh && nuh<24)
+//     {
+//         printf("½¡¿µÌåÖØ£¬Çë¼ÌĞø±£³Ö\n");
+//         return 0;
+
+//     }
+//     else if(24<=nuh && nuh<27)
+//     {
+//         printf("ÌåÖØ¹ıÖØÁË\n");
+//         return 0;
+//     }
+//     else if (nuh>=27)
+//     {
+//         printf("ÌåÖØ³¬ÖØÁË\n");
+//         return 0;
+//     }
+    
+
+//     return 0;
+
+// }
+
+
+
+
+//Second edition
+
 #include<stdio.h>
 
 int main(void)
 {
-    float height,weight,standardheight,standardweight;
+    float height, weight, standardheight, standardweight;
     int panduan;
-    float nuh,yuhu;
+    float nuh, yuhu;
 
-    printf("è¯·è¾“å…¥ä½ çš„èº«é«˜:\n");
-    scanf("%f",&height);
+    printf("ÇëÊäÈëÄãµÄÉí¸ß:\n");
+    scanf("%f", &height);
 
-    if (height>100)
+    standardheight = height / 100;
+
+    printf("ÄúµÄÉí¸ßÎª%fÃ×\n", standardheight);
+
+    printf("ÇëÊäÈëÌåÖØ£º\n");
+    scanf("%f", &weight);
+
+    printf("ÇëÑ¡ÔñÄú¸ÕÊäÈëÌåÖØµÄµ¥Î»£º1.¹«½ï£¬2.ÊĞ½ï\n");
+    scanf("%d", &panduan);
+
+    if (panduan == 2)
     {
-        standardheight = height / 100;
+        standardweight = weight / 2;
     }
-    
-
-
-    printf("æ‚¨çš„èº«é«˜ä¸º%fç±³",standardheight);
-
-    printf("è¯·è¾“å…¥ä½“é‡ï¼š\n");
-    
-    scanf("%f",&weight);
-
-    printf("è¯·é€‰æ‹©æ‚¨åˆšè¾“å…¥ä½“é‡çš„å•ä½ï¼š1.å…¬æ–¤ï¼Œ2.å¸‚æ–¤");
-    scanf("%d",&panduan);
-
-
-
-    if (panduan = 2)
+    else if (panduan == 1)
     {
-        standardheight = (float)height / 2;
+        standardweight = weight;
     }
-    else if (panduan = 1)
+    else
     {
-        standardheight = (float)weight;
-    }
-    else if (panduan != 1 && panduan !=0)
-    {
-        printf("æ‚¨çš„è¾“å…¥æœ‰è¯¯,è¯·é‡æ–°æ‰§è¡Œã€‚");/* code */
+        printf("ÄúµÄÊäÈëÓĞÎó£¬ÇëÖØĞÂÖ´ĞĞ¡£\n");
         return 0;
     }
-    
-    
 
-    printf("æ‚¨çš„ä½“é‡ä¸º%f kg\n",standardweight);
+    printf("ÄúµÄÌåÖØÎª%f kg\n", standardweight);
 
+    yuhu = standardheight * standardheight;
 
-    yuhu = (float)height*height;
+    nuh = standardweight / yuhu;
 
-    
+    printf("yuhuÎª%.1f\n", yuhu);
+    printf("bmiÎª%.1f\n", nuh);
 
-    nuh = (float)weight / yuhu; 
-
-    
-
-    
-
-    printf("yuhuä¸º%.1f\n",yuhu);
-
-    printf("bmiä¸º%.1f\n",nuh);
-
-    if(nuh<18.5)
+    if (nuh < 18.5)
     {
-        printf("ä½“é‡è¿‡è½»\n");
-        return 0;
+        printf("ÌåÖØ¹ıÇá\n");
     }
-    else if(18.5<=nuh && nuh<24)
+    else if (18.5 <= nuh && nuh < 24)
     {
-        printf("å¥åº·ä½“é‡ï¼Œè¯·ç»§ç»­ä¿æŒ\n");
-        return 0;
-
+        printf("½¡¿µÌåÖØ£¬Çë¼ÌĞø±£³Ö\n");
     }
-    else if(24<=nuh && nuh<27)
+    else if (24 <= nuh && nuh < 27)
     {
-        printf("ä½“é‡è¿‡é‡äº†\n");
-        return 0;
+        printf("ÌåÖØ¹ıÖØÁË\n");
     }
-    else if (nuh>=27)
+    else if (nuh >= 27)
     {
-        printf("ä½“é‡è¶…é‡äº†\n");
-        return 0;
+        printf("ÌåÖØ³¬ÖØÁË\n");
     }
-    
 
     return 0;
-
 }
+
+//This maybe the last edition of this cmd version.
+
+//Next Version 3 will incloud a simple gui.
