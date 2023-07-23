@@ -1,10 +1,13 @@
 #include<stdio.h>
-#include<windows.h>
+
+//#include<windows.h>
+
 
 int main(void)
 {
     int hudshuh;
-    SetConsoleOutputCP(65001);
+    //SetConsoleOutputCP(65001);
+
     printf("欢迎使用c语言工具箱V1.0版本\n");
 
     printf("请输入你想使用的内容：\n1.转换长度工具  2.转换鞋码工具  3.BMI健康指数计算工具\n");
@@ -13,7 +16,9 @@ int main(void)
 
     if (hudshuh == 1)
     {
-        SetConsoleOutputCP(65001);
+
+        //SetConsoleOutputCP(65001);
+
         float chose,input,calculate,mile,foot,meter,inch,yard; //init things
         printf("欢迎使用长度换算系统工具\n");
         printf("请输入你要输入的单位：\n1.米  2.英尺  3.英寸  4.英里  5.码");
@@ -86,7 +91,8 @@ int main(void)
     else if(hudshuh == 2)
     {
         int input;
-        SetConsoleOutputCP(65001);
+
+
         float test,europe,usa,eng,china,temp,linshi;
         printf("欢迎使用鞋子尺码换算工具");
         printf("请输入您要使用的模式：\n1.欧洲尺码换算为其他\n2.中国尺码换算为其他尺码\n3.美国尺码换算为其他尺码\n4.英式尺码换算为其他尺码\n（如果不输入默认为欧洲尺码）");
