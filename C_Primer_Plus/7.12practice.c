@@ -11,35 +11,38 @@
 int main(void)
 {
     float time,totaltime,withouttax,youget,extra;
-    printf("Please enter your work time\n");
-    scanf("%f",&time);
-    if (time > limit1)
-    {
-        extra = (time - limit1)*rate;
-        totaltime = extra + time - limit1;
-        withouttax = hour * totaltime;
-        youget = withouttax - (limit2 * tax1)-(limit3 * tax2)-((withouttax - 450)*tax3);
+    start:
 
-
-
-    }
-    else
-    {
-        withouttax = hour * time;
-        if (withouttax > 300 && withouttax < 450)
+        printf("Please enter your work time\n");
+        scanf("%f",&time);
+        if (time > limit1)
         {
-            youget = withouttax -(limit2*tax1)-(withouttax - 300)*tax2;
-         
-        }
-        else if (withouttax > 450)
-        {
+            extra = (time - limit1)*rate;
+            totaltime = extra + time - limit1;
+            withouttax = hour * totaltime;
             youget = withouttax - (limit2 * tax1)-(limit3 * tax2)-((withouttax - 450)*tax3);
+
+
+
         }
+        else
+        {
+            withouttax = hour * time;
+            if (withouttax > 300 && withouttax < 450)
+            {
+                youget = withouttax -(limit2*tax1)-(withouttax - 300)*tax2;
+         
+            }
+            else if (withouttax > 450)
+            {
+                youget = withouttax - (limit2 * tax1)-(limit3 * tax2)-((withouttax - 450)*tax3);
+            }
         
         
-    }
-    printf("You will get %f dollars this week\n Have a good day!",youget);
-    return 0;
+        }
+        printf("You will get %f dollars this week\n Have a good day!",youget);
+        //return 0;
+        goto start;
     
 
 }
