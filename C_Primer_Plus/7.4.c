@@ -7,7 +7,7 @@ int main (void)
 {
     char c;
     char prev;
-    long n_chars = 0L;
+    long n_chars = 0L;//表示强制将0转换成long函数
     int n_lines = 0;
     int n_words = 0;
     int p_lines  = 0;
@@ -45,7 +45,7 @@ int main (void)
 
     return 0;
 
-    
+
     
     
 }
