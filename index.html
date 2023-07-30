@@ -1,1 +1,50 @@
-4.194.36.206
+#include <windows.h>
+    #include <dshow.h>
+    
+    int main() {
+        CoInitialize(NULL); // 初始化COM库
+    
+        IGraphBuilder *pGraph = NULL;
+        ICaptureGraphBuilder2 *pCaptureGraphBuilder = NULL;
+        IBaseFilter *pVideoCaptureFilter = NULL;
+        IMediaControl *pMediaControl = NULL;
+    
+        HRESULT hr = CoCreateInstance(CLSID_FilterGraph, NULL, CLSCTX_INPROC_SERVER, IID_IGraphBuilder, (void **)&pGraph);
+        if (FAILED(hr)) goto end;
+    
+        hr = CoCreateInstance(CLSID_CaptureGraphBuilder2, NULL, CLSCTX_INPROC_SERVER, IID_ICaptureGraphBuilder2, (void **)&pCaptureGraphBuilder);
+        if (FAILED(hr)) goto end;
+    
+        hr = pCaptureGraphBuilder->SetFiltergraph(pGraph);
+        if (FAILED(hr)) goto end;
+    
+        hr = CoCreateInstance(CLSID_VideoCapture, NULL, CLSCTX_INPROC_SERVER, IID_IBaseFilter, (void **)&pVideoCaptureFilter);
+        if (FAILED(hr)) goto end;
+    
+        hr = pGraph->AddFilter(pVideoCaptureFilter, L"Video Capture");
+        if (FAILED(hr)) goto end;
+    
+        hr = pCaptureGraphBuilder->RenderStream(&PIN_CATEGORY_PREVIEW, &MEDIATYPE_Video, pVideoCaptureFilter, NULL, NULL);
+        if (FAILED(hr)) goto end;
+    
+        hr = pGraph->QueryInterface(IID_IMediaControl, (void **)&pMediaControl);
+        if (FAILED(hr)) goto end;
+    
+        hr = pMediaControl->Run();
+        if (FAILED(hr)) goto end;
+    
+        Sleep(5000); // 程序暂停5秒钟
+    
+        hr = pMediaControl->Stop();
+        if (FAILED(hr)) goto end;
+    
+    end:
+        if (pMediaControl) pMediaControl->Release();
+        if (pVideoCaptureFilter) pVideoCaptureFilter->Release();
+        if (pCaptureGraphBuilder) pCaptureGraphBuilder->Release();
+        if (pGraph) pGraph->Release();
+    
+        CoUninitialize(); // 释放COM库资源
+    
+        return 0;
+    }
