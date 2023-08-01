@@ -13,7 +13,6 @@ int isPrime(int num) {
     return 1;  // 是素数
 }
 
-
 int main() {
     int num;
     printf("请输入一个整数：");
