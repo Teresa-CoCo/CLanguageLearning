@@ -2,6 +2,7 @@
 #include<windows.h>
 #include<time.h>
 int main() {
+    SetConsoleOutputCP(65001);
     int randomnumber,luckynumber;
     printf("欢迎使用幸运数程序\n快来看看你今天的幸运数字是几！\n");
     Sleep(1000);
