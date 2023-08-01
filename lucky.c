@@ -12,7 +12,7 @@ int main() {
     Sleep(4000);
 
     srand(time(NULL)); // 使用当前时间作为随机数种子
-    randomnumber = rand() % 9 + 1; // 生成介于 100 和 999 之间的随机数
+    randomnumber = rand() % 9 + 1; // 生成 1 和 9 之间的随机数
 
     printf("生成好了，您今天的幸运数字为 %d\n快分享给你的朋友吧！", randomnumber);
     
@@ -31,7 +31,7 @@ int main() {
         Sleep(3000);
         printf("经系统夜以继日的判断，您今天的运势为：\n");
         Sleep(2000);
-        luckynumber = rand() % 10 + 1;
+        luckynumber = rand() % 10 + 1;//生成1-10的随机数
         if (luckynumber == 1)
         {
             printf("大吉");/* code */
