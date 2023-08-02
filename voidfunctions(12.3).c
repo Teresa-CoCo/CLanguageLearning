@@ -18,10 +18,11 @@
 
 int main(void)
 {
+    SetConsoleOutputCP(65001);
     printf("欢迎使用万能表\n");
     //int volt,anpei;
     int dangwei;
-    printf("请选择档位：1.安培档，2.电压档，3.安培档");
+    printf("请选择档位：1.安培档，2.电压档，3.欧姆档");
     scanf("%d",&dangwei);
     if (dangwei == 1)
     {
@@ -44,28 +45,28 @@ int main(void)
     
 
 }
-void anpei()
+void anpei(void)
 {
     float volt,anpei,omega;
     printf("请输入电阻、电压\n");
     scanf("%d %d",&omega,&volt);
-    anpei == volt / omega;
+    anpei = volt / omega;
     printf("经计算，电流为%f",anpei);
     return 0;
 
 }
-void volt()
+void volt(void)
 {
-    float volt,anpei,omega;
+    long volt,anpei,omega;
     printf("请输入电阻、电流\n");
     scanf("%d %d",&omega,&anpei);
-    volt == anpei * omega;
-    printf("经计算，电压为%f",volt);
+    volt = anpei * omega;
+    printf("经计算，电压为%ld",volt);
     return 0;
 }
 void omegacal()
 {
-    int volt,anpei,omega;
+    float volt,anpei,omega;
     printf("请输入电压、电流\n");
     scanf("%d %d",&volt,&anpei);
     omega =volt / anpei;
