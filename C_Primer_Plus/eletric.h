@@ -16,7 +16,7 @@
 //     Sleep(5000);
 // }
 
-int main(void)
+void electric(void)
 {
     SetConsoleOutputCP(65001);
     printf("欢迎使用万能表\n");
