@@ -3,7 +3,7 @@
 
 //先实现循环输入数组
 
-int main()
+void input()
 {
     printf("请输入要输入的个数");
     int total;
@@ -17,26 +17,58 @@ int main()
         array[i]=input;
     }
     //进行排序
-    //int new[total+1];
-    int chche;
-    //先取第二个数(第二个元素是1)
-    for (int i = 1; i <= total; i++)
+}
+
+
+void sort()
+{
+    int array[4]={10,11,4,99};
+    int cache;
+    
+    for (int i = 0; i <= 4; i++)
     {
-        chche=array[i];
-        for (int j = i-1; j >=0; --j)
+        for (int j = 0; j <= 4; ++j)
         {
-            if (array[j]<array[i])
+            if (array[j]>array[j+1])
             {
-                array[i]=array[j];
+                cache = array[j];
+                array[j] = array[j+1];
+                array[j+1]= cache;
             }
-            else
-            {
-                break;
-            }
-        
+            
+            
         }
-        chche=array[i];
+        array[0]=cache;
         
+        // if(array[0]>array[1])
+        // {
+        //     cache = array[0];
+        //     array[0] = array[1];
+        //     array[1] = cache;
+
+
+        // }
+        // if(array[1]>array[2])
+        // {
+        //     cache = array[1];
+        //     array[1]=array[2];
+        //     array[2] = cache;
+        // }
+        // if (array[2]>array[3])
+        // {
+        //     cache = array[2];
+        //     array[2] = array[3];
+        //     array[3] = cache;   
+        // }
+        // else
+        // {
+        //     continue;
+        // }
     }
-    return array;
+    printf("排序结果为：%d,%d,%d,%d",array[0],array[1],array[2],array[3],array[4]);
+}
+
+int main()
+{
+    sort();
 }
