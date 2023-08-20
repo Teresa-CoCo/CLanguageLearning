@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 //1，2例题跳过
-//3例题plus版//
+//3例题plus版
 int main()
 {
     int temp;
