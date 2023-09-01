@@ -7,6 +7,7 @@
 #include<D:\Develop\CLanguageLearning-1\C_Primer_Plus\eletric.h>
 #include<D:\Develop\CLanguageLearning-1\C_Primer_Plus\lucky.h>
 #include<D:\Develop\CLanguageLearning-2\C_Primer_Plus\excel.h>
+#include<D:\Develop\CLanguageLearning-2\C_Primer_Plus\twobit.h>
 
 int main(void)
 {
@@ -17,7 +18,7 @@ int main(void)
     {
         printf("欢迎使用C语言工具箱V2.0版\n");
         Sleep(1000);
-        printf("请输入你要使用的功能：\n1.转换长度工具  2.转换鞋码工具  3.BMI健康指数计算工具 4.（新）多功能电表 5.（新）幸运数字与运势 6.excel快查");
+        printf("请输入你要使用的功能：\n1.转换长度工具  2.转换鞋码工具  3.BMI健康指数计算工具 4.多功能电表 5.幸运数字与运势 6.excel快查（新）7.二进制十进制互转（新）");
         scanf("%d",&grate);
         if (grate == 1)
         {
@@ -42,6 +43,10 @@ int main(void)
         else if (grate == 6)
         {
             excel();
+        }
+        else if(grate == 7)
+        {
+            twobit();
         }
         
         else
