@@ -19,7 +19,9 @@ void excel()
     }
     else if (inputt1 == 2)
     {
-        printf("1.");
+        printf("1.IF(logical_test,[value_if_true],[value_if_false])\n2.AND(logical1, logical2, ...)\n3.REPLACE(old_text, start_num, num_chars, new_text)\n");
+        printf("更多请打开此网站： https://cloud.tencent.com/developer/article/1838546\n");
+        Sleep(10000);
     }
     
     
