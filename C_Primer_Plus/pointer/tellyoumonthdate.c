@@ -8,7 +8,7 @@ int main()
     int nowyear;
     int index;
     printf("请输入现在的年份，格式为年（连着写）\n");
-    scanf("%d",nowyear);
+    scanf("%d",&nowyear);
     if (nowyear%4 == 0 )
     {
         printf("今年为闰年，二月有29天\n");
