@@ -9,6 +9,7 @@
 int main()
 {
     int input = 0;
+    SetConsoleOutputCP(65001);
     printf("==============================\n");
     printf("Hyper-V Auto VM-manager\n");
     printf("Hyper-V Bat 4.0重构版\n");
