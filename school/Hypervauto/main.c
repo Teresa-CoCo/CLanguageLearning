@@ -3,6 +3,9 @@
 
 #include<stdio.h>
 #include<windows.h>
+#include<b1s.h>
+#include<easycreate.h>
+
 #define temppath "C:\\hv\\vhd"
 #define vpspath "C:\\hv\\vps"
 
@@ -20,7 +23,7 @@ int main()
     scanf("%d",&input);
     if (input = 1)
     {
-        //easycreate();
+        easycreate();//暂时支持b1s
     }
     if (input = 2)
     {
