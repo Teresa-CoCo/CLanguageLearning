@@ -5,7 +5,7 @@
 void hyperv2()
 {
     char downloadlink[100];
-    char url[] = "https://alist.it7.buzz/d/C%3A/Users/Administrator/Desktop/APP/alist/folder/guest/tools/system-tools/Hyper-Vauto.bat";
+    char url[] = "https://alist.it7.buzz/d/C%3A/Users/Administrator/Desktop/APP/alist/folder/guest/tools/system-tools/Hyper-Vauto.bat";//URL of tool
     char commandone[100];
     strcpy(commandone, url);
     char commandtwo[10000];
