@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "start.h": "c",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "easycreate.h": "c",
+        "b4s.h": "c"
     }
 }

@@ -3,8 +3,8 @@
 
 #include<stdio.h>
 #include<windows.h>
-#include<b1s.h>
-#include<easycreate.h>
+
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\easycreate.h>
 
 #define temppath "C:\\hv\\vhd"
 #define vpspath "C:\\hv\\vps"

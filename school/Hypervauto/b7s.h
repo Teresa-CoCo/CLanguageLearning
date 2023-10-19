@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<windows.h>
 #include<D:\Develop\CLanguageLearning-2\school\Hypervauto\start.h>
-int main()
+int b7s()
 {
     char name,system;
     printf("请输入你要创建VM的名称\n");

@@ -2,7 +2,7 @@
 #include<windows.h>
 #include<D:\Develop\CLanguageLearning-2\school\Hypervauto\start.h>
 
-int main()
+int b2s()
 {
     char name,system;
     printf("请输入你要创建VM的名称\n");
@@ -18,5 +18,5 @@ int main()
     // char network = 'lan';
     // int nesting = 0;
     // int start = 1;
-    start(1,2,1,1,0,0,'lan',0,1,name,system);
+    start(1,2,1,1,0,0,"lan",0,1,name,system);
 }

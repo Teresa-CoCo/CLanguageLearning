@@ -7,16 +7,16 @@
 #define vpspath "C:\\hv\\vps"
 void start(int different,int memory,int dynamic,int cpu,int limitcpu,int datadisk,char network,int nesting,int start,char name,char systemone)
 {
-    int different;
-    int memory;
-    int dynamic;
-    int cpu;
-    int limitcpu;
-    int datadisk;
-    char network;
-    int nesting;
-    int start;
-    char name,systemone;
+    // int different;
+    // int memory;
+    // int dynamic;
+    // int cpu;
+    // int limitcpu;
+    // int datadisk;
+    // char network;
+    // int nesting;
+    // int start;
+    // char name,systemone;
     printf("正在开启虚拟机，等待用户确认后创建虚拟机\n");
     printf("=======================================\n");
     printf("下面是你输入的信息，输入1创建虚拟机");

@@ -1,7 +1,15 @@
 #include<stdio.h>
 #include<windows.h>
-
-int main()
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b1s.h>
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b2s.h>
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b3s.h>
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b4s.h>
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b5s.h>
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b6s.h>
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b7s.h>
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b8s.h>
+#include<D:\Develop\CLanguageLearning-2\school\Hypervauto\b9s.h>
+int easycreate()
 {
     char name,system;
     printf("请输入你要创建VM的名称\n");
