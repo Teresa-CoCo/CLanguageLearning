@@ -17,5 +17,5 @@ int b3s()
     // char network = 'lan';
     // int nesting = 0;
     // int start = 1;
-    start(1,2,1,2,0,0,"lan",0,1,name,system);
+    starts(1,2,1,2,0,0,"lan",0,1,name,system);
 }

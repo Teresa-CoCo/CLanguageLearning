@@ -5,7 +5,7 @@
 #include<time.h>
 #define temppath "C:\\hv\\vhd"
 #define vpspath "C:\\hv\\vps"
-void start(int different,int memory,int dynamic,int cpu,int limitcpu,int datadisk,char network,int nesting,int start,char name,char systemone)
+void qidong(int different,int memory,int dynamic,int cpu,int limitcpu,int datadisk,char network[],int nesting,int start,char name[],char systemone[])
 {
     // int different;
     // int memory;
@@ -20,7 +20,7 @@ void start(int different,int memory,int dynamic,int cpu,int limitcpu,int datadis
     printf("正在开启虚拟机，等待用户确认后创建虚拟机\n");
     printf("=======================================\n");
     printf("下面是你输入的信息，输入1创建虚拟机");
-    printf("开机来源:本地开机(api暂未开放),模板路径: %s ,VM路径: %s ,名称:%s,模板:%s,差异存盘:%d,内存大小：%d G,是否动态内存：%d,CPU核心数:%d CORE(s),是否限制CPU使用:%d,是否创建数据盘:%d,桥接网卡:%s,虚拟机嵌套:%d,是否开启这个虚拟机:%d",temppath,vpspath,systemone,different,memory,dynamic,cpu,limitcpu,datadisk,network,nesting,start);
+    printf("开机来源:本地开机(api暂未开放),模板路径: %s ,VM路径: %s ,名称:%s,模板:%s,差异存盘:%d,内存大小：%d G,是否动态内存：%d,CPU核心数:%d CORE(s),是否限制CPU使用:%d,是否创建数据盘:%d,桥接网卡:%s,虚拟机嵌套:%d,是否开启这个虚拟机:%d",temppath,vpspath,&systemone,different,memory,dynamic,cpu,limitcpu,datadisk,network,nesting,start);
     //可新增功能：选择模板路径 选择VM路径
     int inpuut;
 

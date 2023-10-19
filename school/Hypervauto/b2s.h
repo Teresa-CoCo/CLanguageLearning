@@ -5,6 +5,7 @@
 int b2s()
 {
     char name,system;
+    char network[100] ="lan";
     printf("请输入你要创建VM的名称\n");
     scanf("%s",&name);
     printf("请输入你要创建虚拟机的系统模板名称，比如 2012");
@@ -18,5 +19,5 @@ int b2s()
     // char network = 'lan';
     // int nesting = 0;
     // int start = 1;
-    start(1,2,1,1,0,0,"lan",0,1,name,system);
+    starts(1,2,1,1,0,0,network,0,1,name,system);
 }
