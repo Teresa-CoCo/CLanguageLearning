@@ -23,7 +23,7 @@ int main()
     scanf("%d",&input);
     if (input = 1)
     {
-        easycreate();//暂时支持b1s
+        easycreate();
     }
     if (input = 2)
     {
