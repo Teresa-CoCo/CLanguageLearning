@@ -3,6 +3,7 @@
         "start.h": "c",
         "typeinfo": "cpp",
         "easycreate.h": "c",
-        "b4s.h": "c"
+        "b4s.h": "c",
+        "twobit.h": "c"
     }
 }
