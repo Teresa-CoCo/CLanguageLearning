@@ -4,6 +4,7 @@
         "typeinfo": "cpp",
         "easycreate.h": "c",
         "b4s.h": "c",
-        "twobit.h": "c"
+        "twobit.h": "c",
+        "ssh.h": "c"
     }
 }

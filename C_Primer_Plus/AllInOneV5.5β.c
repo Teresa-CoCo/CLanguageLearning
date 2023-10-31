@@ -11,7 +11,7 @@
 #include<D:\Develop\CLanguageLearning-2\C_Primer_Plus\hyperv2.h>
 #include<D:\Develop\CLanguageLearning-2\C_Primer_Plus\game\saolei.h>
 #include<D:\Develop\CLanguageLearning-2\C_Primer_Plus\ssh.h>
-int main(void)
+void main(void)
 {
     int grate;
     int i =0;
